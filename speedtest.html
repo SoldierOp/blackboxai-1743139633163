@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speed Test | SpeedTest Pro</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/speedtest.css">
+</head>
+<body>
+    <header class="glass-navbar">
+        <div class="container">
+            <a href="index.html" class="logo">SpeedTest<span>Pro</span></a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="speedtest.html" class="active">Speed Test</a></li>
+                    <li><a href="reviews.html">Reviews</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="speedtest-main">
+        <div class="container">
+            <h1 class="speedtest-title">Internet Speed Test</h1>
+            <div class="speedtest-card glass-card">
+                <div class="test-controls">
+                    <button id="start-test" class="test-button">
+                        <i class="fas fa-play"></i> Start Test
+                    </button>
+                    <div class="test-status" id="test-status">Ready to test</div>
+                </div>
+
+                <div class="test-results">
+                    <div class="result-item">
+                        <div class="result-label">
+                            <i class="fas fa-download"></i> Download
+                        </div>
+                        <div class="progress-container">
+                            <div class="progress-bar" id="download-bar"></div>
+                            <div class="progress-text" id="download-speed">0 Mbps</div>
+                        </div>
+                    </div>
+
+                    <div class="result-item">
+                        <div class="result-label">
+                            <i class="fas fa-upload"></i> Upload
+                        </div>
+                        <div class="progress-container">
+                            <div class="progress-bar" id="upload-bar"></div>
+                            <div class="progress-text" id="upload-speed">0 Mbps</div>
+                        </div>
+                    </div>
+
+                    <div class="result-item">
+                        <div class="result-label">
+                            <i class="fas fa-clock"></i> Ping
+                        </div>
+                        <div class="ping-value" id="ping-value">0 ms</div>
+                    </div>
+                </div>
+
+                <div class="test-history" id="test-history">
+                    <h3>Recent Tests</h3>
+                    <div class="history-items"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 SpeedTest Pro. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/speedtest.js"></script>
+</body>
+</html>
