@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reviews | SpeedTest Pro</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reviews.css">
+</head>
+<body>
+    <header class="glass-navbar">
+        <div class="container">
+            <a href="index.html" class="logo">SpeedTest<span>Pro</span></a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="speedtest.html">Speed Test</a></li>
+                    <li><a href="reviews.html" class="active">Reviews</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="reviews-main">
+        <div class="container">
+            <h1 class="reviews-title">What Our Users Say</h1>
+            
+            <div class="review-form glass-card">
+                <h2>Submit Your Review</h2>
+                <form id="reviewForm">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Rating:</label>
+                        <div class="star-rating">
+                            <i class="far fa-star" data-rating="1"></i>
+                            <i class="far fa-star" data-rating="2"></i>
+                            <i class="far fa-star" data-rating="3"></i>
+                            <i class="far fa-star" data-rating="4"></i>
+                            <i class="far fa-star" data-rating="5"></i>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="review">Review:</label>
+                        <textarea id="review" name="review" rows="4" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <button type="submit" class="submit-btn">Submit Review</button>
+                </form>
+            </div>
+            
+            <div class="reviews-grid" id="reviewsContainer">
+                <!-- Existing reviews will be loaded here -->
+                <div class="review-card glass-card">
+                    <div class="review-header">
+                        <div class="reviewer">John D.</div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="review-content">
+                        "The most accurate speed test I've used. The results match exactly with my ISP's promised speeds."
+                    </div>
+                    <div class="review-date">March 15, 2025</div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 SpeedTest Pro. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="js/reviews-enhanced.js"></script>
+</body>
+</html>
